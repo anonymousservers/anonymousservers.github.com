@@ -4,6 +4,30 @@
 <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet'>
 <meta name="viewport" content="initial-scale=1">
 <link rel="icon" type="image/png" href="https://res.cloudinary.com/horrisellis/image/upload/v1514341600/Other/xmr_mid.png">
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script>
+$(document).ready(function(){
+var header = $('body');
+
+var backgrounds = new Array(
+    'url(http://placekitten.com/100)'
+  , 'url(http://placekitten.com/200)'
+  , 'url(http://placekitten.com/300)'
+  , 'url(http://res.cloudinary.com/horrisellis/image/upload/v1514344444/Other/bgbody.jpg)'
+);
+
+var current = 0;
+
+function nextBackground() {
+    current++;
+    current = current % backgrounds.length;
+    header.css('background-image', backgrounds[current]);
+}
+setInterval(nextBackground, 1000);
+
+header.css('background-image', backgrounds[0]);
+});
+</script>
 
 
 <title>Monero Miner</title>
