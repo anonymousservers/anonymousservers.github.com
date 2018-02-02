@@ -75,9 +75,7 @@ em {
     font-family:'Abel';font-size: 30px;
     display:inline;
     padding-top:50px;
-	overflow: hidden;
-    max-height: 500px;
-    height: auto;
+    position:fixed;
 }
 #important {
 	color:red;
